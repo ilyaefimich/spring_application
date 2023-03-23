@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "id" : 0,
+      "title" : "Verka Serduchka",
+      "date" : 1810262100000
+    },
+    {
+      "id" : 1,
+      "title" : "Olga Polyakova",
+      "date" : 1820262100000
+    },
+    {
+      "id" : 2,
+      "title" : "Maks Barskich",
+      "date" : 1820262100000
+    },
+    {
+      "id" : 3,
+      "title" : "David Guetta",
+      "date" : 171826819912
+    }
+  ]
+}

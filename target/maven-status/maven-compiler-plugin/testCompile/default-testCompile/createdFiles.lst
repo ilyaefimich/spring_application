@@ -1,0 +1,5 @@
+com\epam\spring\TestEvents.class
+com\epam\spring\TestTickets.class
+com\epam\spring\RealLifeScenarioTest.class
+com\epam\spring\TestUsers.class
+com\epam\spring\utils\UtilsTest.class

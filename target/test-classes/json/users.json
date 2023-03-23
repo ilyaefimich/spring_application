@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id" : 0,
+      "name" : "Vasyl Shevchuk",
+      "email" : "Vasyl_Shevchuk@epam.com"
+    },
+    {
+      "id" : 1,
+      "name" : "Maksym Mazurkevych",
+      "email" : "Maksym_Mazurkevych@epam.com"
+    },
+    {
+      "id" : 2,
+      "name" : "Yurii Palazeniuk",
+      "email" : "Yurii_Palazeniuk@epam.com"
+    },
+    {
+      "id" : 3,
+      "name" : "Volodymyr Kychak",
+      "email" : "Volodymyr_Kychak@epam.com"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+
+    <context:component-scan base-package="com.epam.spring"/>
+    <context:property-placeholder location="classpath:my.properties"/>
+
+    <bean class="com.epam.spring.storage.InitStorage"/>
+
+    <bean id="repository" class="com.epam.spring.repository.Repository"/>
+
+    <bean id="ticketService" class="com.epam.spring.service.TicketService">
+        <constructor-arg ref="ticketDao"/>
+    </bean>
+
+    <bean id="userService" class="com.epam.spring.service.UserService">
+        <constructor-arg ref="userDao"/>
+    </bean>
+
+    <bean id="eventService" class="com.epam.spring.service.EventService">
+        <constructor-arg ref="eventDao"/>
+    </bean>
+
+    <bean id="bookingService" class="com.epam.spring.service.BookingService">
+        <constructor-arg ref="ticketService"/>
+        <constructor-arg ref="eventService"/>
+        <constructor-arg ref="userService"/>
+    </bean>
+
+    <bean id="userDao" class="com.epam.spring.dao.impl.DefaultUserDao"/>
+    <bean id="ticketDao" class="com.epam.spring.dao.impl.DefaultTicketDao"/>
+    <bean id="eventDao" class="com.epam.spring.dao.impl.DefaultEventDao"/>
+
+</beans>
